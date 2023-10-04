@@ -1,0 +1,22 @@
+@api= http://localhost:5000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/1
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "title": "Folagor video",
+    "url": "https://www.youtube.com/watch?v=AQDwpim8JH0",
+    "description": "Calvo video"
+}
+###
+DELETE {{api}}/videos/1
+
+###
+PUT {{api}}/videos/1
+
